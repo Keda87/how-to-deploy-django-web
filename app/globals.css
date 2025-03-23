@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 160 43% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 43% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 43% 9%;
+
+    --primary: 160 43% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 158 45% 49%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 160 20% 96%;
+    --muted-foreground: 160 10% 40%;
+
+    --accent: 158 45% 49%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 5% 90%;
+    --input: 160 5% 90%;
+    --ring: 160 43% 9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 160 43% 9%;
+    --foreground: 0 0% 98%;
+
+    --card: 160 43% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 160 43% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 158 45% 49%;
+    --primary-foreground: 160 43% 9%;
+
+    --secondary: 160 43% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 160 43% 20%;
+    --muted-foreground: 160 10% 70%;
+
+    --accent: 160 43% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 43% 20%;
+    --input: 160 43% 20%;
+    --ring: 158 45% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.django-logo {
+  fill: hsl(var(--primary));
+}
+
+.django-header {
+  background: linear-gradient(to right, hsl(160 43% 9%), hsl(158 45% 30%));
+}
+
