@@ -21,7 +21,8 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: "export"
+  output: "export",
+  basePath: "/how-to-deploy-django-web"
 }
 
 mergeConfig(nextConfig, userConfig)
